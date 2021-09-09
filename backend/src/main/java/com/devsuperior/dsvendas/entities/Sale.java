@@ -23,6 +23,8 @@ public class Sale {
 	@ManyToOne 
 	@JoinColumn(name="seller_id")
 	private Seller seller;
+	public Sale(){
+	}
 	
 	public Sale(Long id, Integer visited, Integer deals, Double amount, LocalDate date, Seller seller) {
 		this.id = id;
